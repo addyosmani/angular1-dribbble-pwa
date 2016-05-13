@@ -1,0 +1,58 @@
+body { 
+    padding-top: 70px; 
+}
+.thumbnail:hover {
+    text-decoration: none;
+}
+.thumbnail .caption {
+    padding: 3px;
+    padding-bottom: 15px;
+    color: #aaa;
+    font-size: 11px;
+}
+.caption .trophy {
+    float: left;
+    width: 45px;
+}
+.thumbnail .caption .glyphicon {
+    padding-left: 6px;
+}
+.thumbnail img {
+    min-width: 100%;
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+div .col-sm-2 {
+    min-width: 190px;
+}
+.more {
+    padding-bottom: 20px;
+}
+@media (min-width: 450px)
+{
+    .col-sm-2 {
+        width: 16.66666667% !important;
+    }
+}
+@media (min-width: 450px)
+{
+    .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+        float: left !important;
+    }
+}
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+/* Load button */
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}

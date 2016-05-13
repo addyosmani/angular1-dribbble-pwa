@@ -1,0 +1,30 @@
+.details {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+div .details {
+    max-width: 100%;
+}
+div .details .author {
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.author .img-circle {
+    width: 48px;
+}
+.author span {
+    padding-left: 10px;
+    font-size: 24px;
+}
+.image {
+    max-width: 400px;
+}
+.description {
+    padding-top: 20px;
+    max-width: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.modal-details {
+    max-width: 440px;
+}

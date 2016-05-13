@@ -1,0 +1,24 @@
+﻿extends ./layout.jade
+
+block content
+
+	//Most popular shots	
+	div(ng-controller='ShotsCtrl')
+		div(class='col-sm-2' ng-repeat='shot in shots' ng-cloak)
+			a(ng-click='showDetails($index)' class='thumbnail')
+				img(ng-src='{{ shot.images.normal || shot.images.teaser }}')
+				div(class='caption')
+					div(class='trophy')
+						span(class="glyphicon glyphicon-heart")
+						| {{ shot.likes_count || 0 }}
+					div(class='trophy')
+						span(class="glyphicon glyphicon-eye-open")
+						| {{ shot.views_count || 0 }}
+					div(class='trophy')
+						span(class="glyphicon glyphicon-comment")
+						| {{ shot.comments_count || 0 }}
+		div(class='more')
+			button(class='btn btn-lg btn-primary btn-block' ng-click='loadMore()' ng-show='!loading' ng-cloak) More
+			button(class='btn btn-lg btn-primary btn-block' ng-show='loading' ng-cloak)
+				span(class="glyphicon glyphicon-refresh glyphicon-refresh-animate")
+				|    Loading...

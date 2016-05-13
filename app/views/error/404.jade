@@ -1,0 +1,15 @@
+extends ../layout.jade
+
+block content
+	link(rel='stylesheet' href='/style/404.css')
+
+	div(class='row')
+		div(class="col-md-12")
+			div(class="error-template")
+				h1 Oops!
+				h2 404 Not Found
+				div(class="error-details") Sorry, an error has occured, Requested page not found!
+				div(class="error-actions")
+					a(href="/" class="btn btn-primary btn-lg")
+						span(class="glyphicon glyphicon-home")
+						|    Take Me Home

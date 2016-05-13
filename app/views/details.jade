@@ -1,0 +1,12 @@
+div(class='container details')
+	button(class='close' ng-click='$close()')
+		span(aria-hidden='true') ×
+	div(class='title')
+		h3 {{ shot.title }}
+	div(class='image')
+		img(ng-src="{{ shot.images.hidpi || shot.images.normal }}" class="img-responsive")
+	div(class='author')
+		img(ng-src="{{ shot.user.avatar_url }}" class="img-circle")
+		span {{ shot.user.name }}
+	div(class='description')
+		span(ng-bind-html='shot.parsedDescription')

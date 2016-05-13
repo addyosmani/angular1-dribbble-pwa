@@ -1,0 +1,28 @@
+html(ng-app='app')
+	head
+		meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+		link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+		link(rel='stylesheet' href='/style/general.css')
+		link(rel='stylesheet' href='/style/details.css')
+		link(rel='icon' type='image/png' href='/images/favicon.ico')
+	body
+		include ./header.jade
+		
+		div(class='container')
+			block content
+		
+		script(src='//code.jquery.com/jquery-1.11.0.min.js')
+		script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js')
+		script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js')
+		script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-resource.min.js')
+		script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.min.js')
+		script(src='//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.0/ui-bootstrap-tpls.min.js')
+		script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+		script(src='/shots.js')
+		script(src='/details.js')
+		script(src='/dribbble.js')
+		script(src='/app.js')
+		include ./sw.jade
+
+
+
