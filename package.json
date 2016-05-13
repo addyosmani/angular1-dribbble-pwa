@@ -1,0 +1,16 @@
+{
+  "name": "dribble-app",
+  "version": "1.0.0",
+  "description": "Consuming Dribbble API with AngularJS",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "sw-precache": "^3.1.1"
+  },
+  "scripts": {
+    "build": "cp node_modules/sw-toolbox/sw-toolbox.js app/sw-toolbox.js && npm run precache",
+    "precache": "sw-precache --root=app --config=sw-precache-config.json"
+  },
+  "author": "Caio Zem"
+}

@@ -1,0 +1,15 @@
+{
+  "importScripts": [
+    "sw-toolbox.js",
+    "runtime-caching.js"
+  ],
+  "stripPrefix": "app/",
+  "verbose": true,
+  "staticFileGlobs": [
+    "app/style/**.css",
+    "app/**.html",
+    "app/views/**.html",
+    "app/images/**.*",
+    "app/js/**.js"
+  ]
+}
