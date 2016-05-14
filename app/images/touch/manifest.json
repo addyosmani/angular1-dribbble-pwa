@@ -1,0 +1,45 @@
+{
+	"name": "Cherry",
+	"short_name": "Cherry",
+	"start_url": "/",
+	"background_color": "#C2185B",
+	"display": "standalone",
+	"theme_color": "#880e4f",
+	"icons": [
+		{
+			"src": "\/images\/touch\/android-chrome-36x36.png",
+			"sizes": "36x36",
+			"type": "image\/png"
+		},
+		{
+			"src": "\/images\/touch\/android-chrome-48x48.png",
+			"sizes": "48x48",
+			"type": "image\/png"
+		},
+		{
+			"src": "\/images\/touch\/android-chrome-72x72.png",
+			"sizes": "72x72",
+			"type": "image\/png"
+		},
+		{
+			"src": "\/images\/touch\/android-chrome-96x96.png",
+			"sizes": "96x96",
+			"type": "image\/png"
+		},
+		{
+			"src": "\/images\/touch\/android-chrome-144x144.png",
+			"sizes": "144x144",
+			"type": "image\/png"
+		},
+		{
+			"src": "\/images\/touch\/android-chrome-192x192.png",
+			"sizes": "192x192",
+			"type": "image\/png"
+		},
+		{
+			"src": "\/images\/touch\/512x512.png",
+			"sizes": "512x512",
+			"type": "image\/png"
+		}
+	]
+}
