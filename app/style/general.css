@@ -1,5 +1,6 @@
 body { 
     padding-top: 70px; 
+    font-family: Roboto,Helvetica,Arial,sans-serif;
 }
 .thumbnail:hover {
     text-decoration: none;

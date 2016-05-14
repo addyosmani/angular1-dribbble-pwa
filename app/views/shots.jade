@@ -18,7 +18,7 @@ block content
 						span(class="glyphicon glyphicon-comment")
 						| {{ shot.comments_count || 0 }}
 		div(class='more')
-			button(class='btn btn-lg btn-primary btn-block' ng-click='loadMore()' ng-show='!loading' ng-cloak) More
-			button(class='btn btn-lg btn-primary btn-block' ng-show='loading' ng-cloak)
+			button(class='btn-block mdl-button ' ng-click='loadMore()' ng-show='!loading' ng-cloak) Load More
+			button(class='btn-block mdl-button' ng-show='loading' ng-cloak)
 				span(class="glyphicon glyphicon-refresh glyphicon-refresh-animate")
 				|    Loading...
