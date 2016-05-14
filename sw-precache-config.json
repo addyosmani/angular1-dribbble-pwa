@@ -6,13 +6,11 @@
   "stripPrefix": "app/",
   "verbose": true,
   "staticFileGlobs": [
-    "app/style/**.css",
     "app/**.html",
     "app/views/**.html",
     "app/images/**.*",
-    "app/js/**.js",
     "app/images/touch/**.*",
-    "app/**.js",
+    "app/dist/**.js",
     "app/style/**.*"
   ]
 }
