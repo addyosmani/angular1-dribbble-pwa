@@ -11,6 +11,9 @@
     "app/images/**.*",
     "app/images/touch/**.*",
     "app/dist/**.js",
-    "app/style/**.*"
+    "app/style/**.*",
+    "app/runtime-caching.js",
+    "app/sw-toolbox.js",
+    "app/service-worker.js"
   ]
 }
