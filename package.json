@@ -8,9 +8,15 @@
     "jade": "^1.11.0",
     "sw-precache": "^3.1.1"
   },
+  "engines": {
+    "node": "~4.2"
+  },
   "scripts": {
     "build": "cp node_modules/sw-toolbox/sw-toolbox.js app/sw-toolbox.js && npm run precache",
-    "precache": "sw-precache --root=app --config=sw-precache-config.json"
+    "precache": "sw-precache --root=app --config=sw-precache-config.json",
+    "start": "node server.js",
+    "monitor": "nodemon app.js",
+    "deploy": "gcloud preview app deploy"
   },
   "author": "Caio Zem"
 }
