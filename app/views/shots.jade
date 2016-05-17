@@ -6,7 +6,7 @@ block content
 	div(ng-controller='ShotsCtrl')
 		div(class='col-sm-2' ng-repeat='shot in shots' ng-cloak)
 			a(ng-click='showDetails($index)' class='md-thumbnail')
-				img(ng-src='{{ shot.images.normal || shot.images.teaser }}')
+				img(ng-src='{{ shot.images.teaser || shot.images.normal }}')
 				div(class='caption')
 					div(class='trophy')
 						span(class="glyphicon glyphicon-heart")
