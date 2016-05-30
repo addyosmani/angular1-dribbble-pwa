@@ -1,6 +1,5 @@
 runtime: nodejs
 vm: true
-secure: always
 
 skip_files:
   - ^(.*/)?.*/node_modules/.*$
