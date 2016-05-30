@@ -24,6 +24,8 @@ As the majority of legacy frameworks weren't built with mobile and slower handse
 
 For those that can't yet update to a newer framework/stack, I hope some of the ideas here prove useful.
 
+Note that this app does not really take advantage of server-side rendering Angular for content. We SSR the shell, but that's about it. Many of the solutions built to tackle this problem over the years were slow and clunky. If I was using something today, it would probably be [angularjs-server](https://github.com/saymedia/angularjs-server), which uses jsdom.
+
 ## Setup
 
 Clone the repository then `cd` into the project and:
