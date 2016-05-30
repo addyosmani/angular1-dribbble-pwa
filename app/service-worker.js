@@ -1,5 +1,5 @@
 /**
- * Copyright 2015 Google Inc. All rights reserved.
+ * Copyright 2016 Google Inc. All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@ importScripts("sw-toolbox.js","runtime-caching.js");
 
 
 /* eslint-disable quotes, comma-spacing */
-var PrecacheConfig = [["dist/bundle.min.js","357a2a43f728a83d44dae7cf99a3ed20"],["images/ic_menu_24px.svg","1bb9b1d13c4f97f92fbe9c5a892ceb31"],["images/touch/512x512.png","0d7a9ebc097a097c409a1a7bfb8a34a5"],["images/touch/android-chrome-144x144.png","2a09461b4d5d533420631e954ebdb039"],["images/touch/android-chrome-192x192.png","72d4317368008a5a42f0570d79efb806"],["images/touch/android-chrome-36x36.png","b703ff483e75264643f5893ee19ab8be"],["images/touch/android-chrome-48x48.png","29cf7924e2df9c487f2402185cafa7a6"],["images/touch/android-chrome-72x72.png","e562fd95ca63eb2130c268bec30c579d"],["images/touch/android-chrome-96x96.png","a7983a24137d3ba472d746c3bd101c6d"],["images/touch/apple-touch-icon-114x114.png","223e41be5fd33f372a751a85f5ce8dcd"],["images/touch/apple-touch-icon-120x120.png","5cde3eadee325ceddf94d0dbe3dd4499"],["images/touch/apple-touch-icon-144x144.png","3ecc24e5e4432fbd658074ff84255344"],["images/touch/apple-touch-icon-152x152.png","5ffe6abc2059e0ae213554a0fda6c4dd"],["images/touch/apple-touch-icon-180x180.png","7e7b930a1ccd964a882a84d8ca32e192"],["images/touch/apple-touch-icon-57x57.png","9a9e31ce2fb1c6490e496be2b2ea8050"],["images/touch/apple-touch-icon-60x60.png","f28bcf5ed0c4d54e2058a1278bb8628e"],["images/touch/apple-touch-icon-72x72.png","1c1cefbee531e46cc371e5d9c248e894"],["images/touch/apple-touch-icon-76x76.png","97c973924e7668b293d14c22924313c8"],["images/touch/apple-touch-icon-precomposed.png","bff2486c704762c740a48a8066f9bc6c"],["images/touch/apple-touch-icon.png","7e7b930a1ccd964a882a84d8ca32e192"],["images/touch/browserconfig.xml","1dbcaeba4f2244978fb3b11a479bfc42"],["images/touch/favicon-16x16.png","baa1c0de644cc3ae110468f39e52b342"],["images/touch/favicon-32x32.png","c2fd7d8fd10fbae883a7bf6c38f27fc2"],["images/touch/favicon-96x96.png","987cbd055f7ff0a7e6e13c3bf7e268c9"],["images/touch/favicon.ico","648218acaeb7296a0fb6d375ad1eea48"],["images/touch/manifest.json","cd04f87296b041cc7d41bd922f3261f7"],["images/touch/mstile-144x144.png","e79e2cc5041fb954ffc625378426c124"],["images/touch/mstile-150x150.png","41994470b221f164e7664ae5d41e0dbd"],["images/touch/mstile-310x150.png","d8c2b23bce56119b515896ec08a505a8"],["images/touch/mstile-310x310.png","3b91bc3b66374a6e6684de5f47317349"],["images/touch/mstile-70x70.png","b5ec8b3cd913d869552947acc1256781"],["images/touch/safari-pinned-tab.svg","2b7d93bdf3a6936315936c9d92c05f83"],["runtime-caching.js","796fcf0b575891fc7e3c7ed251dd27f5"],["service-worker.js","2c8367c63e74e8a5bb2ca31240ff2c77"],["style/404.css","8bd39eafa74d1bd8934a07ba3906eab4"],["style/details.css","4e21657b89bb1d688ad89f79bfb8068d"],["style/general.css","4313e8e4bb959abb1e38bca6f6a126ae"],["sw-toolbox.js","42dd9073ba0a0c8e0ae2230432870678"],["views/critical-styles.html","bd59a19b67aed6fd74e88fcb6730c150"],["views/favicons.html","4c5c8796a3893dc00e0c22fc792cc81a"],["views/header.html","a5bb0a198541f687fcabaa1feb037791"],["views/scripts.html","9ea3ea4acba1b2ca547df5ce947d6bd8"]];
+var PrecacheConfig = [["dist/bundle.min.js","357a2a43f728a83d44dae7cf99a3ed20"],["images/ic_menu_24px.svg","1bb9b1d13c4f97f92fbe9c5a892ceb31"],["images/touch/512x512.png","0d7a9ebc097a097c409a1a7bfb8a34a5"],["images/touch/android-chrome-144x144.png","2a09461b4d5d533420631e954ebdb039"],["images/touch/android-chrome-192x192.png","72d4317368008a5a42f0570d79efb806"],["images/touch/android-chrome-36x36.png","b703ff483e75264643f5893ee19ab8be"],["images/touch/android-chrome-48x48.png","29cf7924e2df9c487f2402185cafa7a6"],["images/touch/android-chrome-72x72.png","e562fd95ca63eb2130c268bec30c579d"],["images/touch/android-chrome-96x96.png","a7983a24137d3ba472d746c3bd101c6d"],["images/touch/apple-touch-icon-114x114.png","223e41be5fd33f372a751a85f5ce8dcd"],["images/touch/apple-touch-icon-120x120.png","5cde3eadee325ceddf94d0dbe3dd4499"],["images/touch/apple-touch-icon-144x144.png","3ecc24e5e4432fbd658074ff84255344"],["images/touch/apple-touch-icon-152x152.png","5ffe6abc2059e0ae213554a0fda6c4dd"],["images/touch/apple-touch-icon-180x180.png","7e7b930a1ccd964a882a84d8ca32e192"],["images/touch/apple-touch-icon-57x57.png","9a9e31ce2fb1c6490e496be2b2ea8050"],["images/touch/apple-touch-icon-60x60.png","f28bcf5ed0c4d54e2058a1278bb8628e"],["images/touch/apple-touch-icon-72x72.png","1c1cefbee531e46cc371e5d9c248e894"],["images/touch/apple-touch-icon-76x76.png","97c973924e7668b293d14c22924313c8"],["images/touch/apple-touch-icon-precomposed.png","bff2486c704762c740a48a8066f9bc6c"],["images/touch/apple-touch-icon.png","7e7b930a1ccd964a882a84d8ca32e192"],["images/touch/browserconfig.xml","668b2584c1b5301af4c56a8cfa4d0776"],["images/touch/favicon-16x16.png","baa1c0de644cc3ae110468f39e52b342"],["images/touch/favicon-32x32.png","c2fd7d8fd10fbae883a7bf6c38f27fc2"],["images/touch/favicon-96x96.png","987cbd055f7ff0a7e6e13c3bf7e268c9"],["images/touch/favicon.ico","648218acaeb7296a0fb6d375ad1eea48"],["images/touch/manifest.json","cd04f87296b041cc7d41bd922f3261f7"],["images/touch/mstile-144x144.png","e79e2cc5041fb954ffc625378426c124"],["images/touch/mstile-150x150.png","41994470b221f164e7664ae5d41e0dbd"],["images/touch/mstile-310x150.png","d8c2b23bce56119b515896ec08a505a8"],["images/touch/mstile-310x310.png","3b91bc3b66374a6e6684de5f47317349"],["images/touch/mstile-70x70.png","b5ec8b3cd913d869552947acc1256781"],["images/touch/safari-pinned-tab.svg","2b7d93bdf3a6936315936c9d92c05f83"],["runtime-caching.js","796fcf0b575891fc7e3c7ed251dd27f5"],["style/404.css","8bd39eafa74d1bd8934a07ba3906eab4"],["style/core.css","dbc5b1d0572c51bc54ba0e1f9519dc65"],["style/details.css","4e21657b89bb1d688ad89f79bfb8068d"],["style/general.css","e0658b650718aa24048330279bc56e72"],["sw-toolbox.js","42dd9073ba0a0c8e0ae2230432870678"],["views/critical-styles.html","ffe400029759848a6cb9a7cbdc58c2d9"],["views/favicons.html","4c5c8796a3893dc00e0c22fc792cc81a"],["views/header.html","a5bb0a198541f687fcabaa1feb037791"],["views/scripts.html","9ea3ea4acba1b2ca547df5ce947d6bd8"]];
 /* eslint-enable quotes, comma-spacing */
 var CacheNamePrefix = 'sw-precache-v1-sw-precache-' + (self.registration ? self.registration.scope : '') + '-';
 
@@ -48,12 +48,12 @@ var addDirectoryIndex = function (originalUrl, index) {
     return url.toString();
   };
 
-var getCacheBustedUrl = function (url, now) {
-    now = now || Date.now();
+var getCacheBustedUrl = function (url, param) {
+    param = param || Date.now();
 
     var urlWithCacheBusting = new URL(url);
     urlWithCacheBusting.search += (urlWithCacheBusting.search ? '&' : '') +
-      'sw-precache=' + now;
+      'sw-precache=' + param;
 
     return urlWithCacheBusting.toString();
   };
@@ -127,36 +127,47 @@ function deleteAllCaches() {
 }
 
 self.addEventListener('install', function(event) {
-  var now = Date.now();
-
   event.waitUntil(
-    caches.keys().then(function(allCacheNames) {
-      return Promise.all(
-        Object.keys(CurrentCacheNamesToAbsoluteUrl).filter(function(cacheName) {
-          return allCacheNames.indexOf(cacheName) === -1;
-        }).map(function(cacheName) {
-          var urlWithCacheBusting = getCacheBustedUrl(CurrentCacheNamesToAbsoluteUrl[cacheName],
-            now);
+    // Take a look at each of the cache names we expect for this version.
+    Promise.all(Object.keys(CurrentCacheNamesToAbsoluteUrl).map(function(cacheName) {
+      return caches.open(cacheName).then(function(cache) {
+        // Get a list of all the entries in the specific named cache.
+        // For caches that are already populated for a given version of a
+        // resource, there should be 1 entry.
+        return cache.keys().then(function(keys) {
+          // If there are 0 entries, either because this is a brand new version
+          // of a resource or because the install step was interrupted the
+          // last time it ran, then we need to populate the cache.
+          if (keys.length === 0) {
+            // Use the last bit of the cache name, which contains the hash,
+            // as the cache-busting parameter.
+            // See https://github.com/GoogleChrome/sw-precache/issues/100
+            var cacheBustParam = cacheName.split('-').pop();
+            var urlWithCacheBusting = getCacheBustedUrl(
+              CurrentCacheNamesToAbsoluteUrl[cacheName], cacheBustParam);
 
-          return caches.open(cacheName).then(function(cache) {
-            var request = new Request(urlWithCacheBusting, {credentials: 'same-origin'});
+            var request = new Request(urlWithCacheBusting,
+              {credentials: 'same-origin'});
             return fetch(request).then(function(response) {
               if (response.ok) {
-                return cache.put(CurrentCacheNamesToAbsoluteUrl[cacheName], response);
+                return cache.put(CurrentCacheNamesToAbsoluteUrl[cacheName],
+                  response);
               }
 
-              console.error('Request for %s returned a response with status %d, so not attempting to cache it.',
+              console.error('Request for %s returned a response status %d, ' +
+                'so not attempting to cache it.',
                 urlWithCacheBusting, response.status);
               // Get rid of the empty cache if we can't add a successful response to it.
               return caches.delete(cacheName);
             });
-          });
-        })
-      ).then(function() {
-        return Promise.all(
-          allCacheNames.filter(function(cacheName) {
-            return cacheName.indexOf(CacheNamePrefix) === 0 &&
-                   !(cacheName in CurrentCacheNamesToAbsoluteUrl);
+          }
+        });
+      });
+    })).then(function() {
+      return caches.keys().then(function(allCacheNames) {
+        return Promise.all(allCacheNames.filter(function(cacheName) {
+          return cacheName.indexOf(CacheNamePrefix) === 0 &&
+            !(cacheName in CurrentCacheNamesToAbsoluteUrl);
           }).map(function(cacheName) {
             return caches.delete(cacheName);
           })

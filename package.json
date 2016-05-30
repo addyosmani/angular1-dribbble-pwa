@@ -12,12 +12,13 @@
     "node": "~4.2"
   },
   "scripts": {
-    "uglify": "cat app/scripts/jquery-1.11.0.min.js app/scripts/angular.min.js app/scripts/angular-route.min.js app/scripts/angular-resource.min.js app/scripts/angular-animate.min.js app/scripts/ui-bootstrap-tpls.min.js app/scripts/bootstrap.min.js app/scripts/shots.js app/scripts/details.js app/scripts/dribbble.js  app/scripts/app.js | uglifyjs -o app/dist/bundle.min.js",
     "build": "npm run uglify && cp node_modules/sw-toolbox/sw-toolbox.js app/sw-toolbox.js && npm run precache",
     "precache": "sw-precache --root=app --config=sw-precache-config.json",
     "start": "node server.js",
     "monitor": "nodemon app.js",
-    "deploy": "gcloud preview app deploy"
+    "deploy": "gcloud preview app deploy",
+    "uglify": "cat app/scripts/jquery-1.11.0.min.js app/scripts/angular.min.js app/scripts/angular-route.min.js app/scripts/angular-resource.min.js app/scripts/angular-animate.min.js app/scripts/ui-bootstrap-tpls.min.js app/scripts/bootstrap.min.js app/scripts/shots.js app/scripts/details.js app/scripts/dribbble.js  app/scripts/app.js | uglifyjs -o app/dist/bundle.min.js",
+    "uncss": "uncss https://cherry-app.appspot.com/ --ignore .container, .details, .modal, .modal-open, .modal-backdrop, .modal-backdrop.fade, .fade, .modal-open .modal, .modal.in, .modal-dialog, .modal.fade, .modal-details, .modal-dialog, .modal.in .modal-dialog,  .modal.fade .modal-dialog, .modal-content, .container, .container, .close, button, input, select, textarea  > app/style/core.css"
   },
   "author": "Caio Zem",
   "devDependencies": {
