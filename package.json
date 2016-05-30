@@ -1,7 +1,7 @@
 {
   "name": "dribble-app",
   "version": "1.0.0",
-  "description": "Consuming Dribbble API with AngularJS",
+  "description": "Angular 1 Dribbble API Progressive Web App",
   "main": "server.js",
   "dependencies": {
     "express": "^4.13.3",
@@ -20,7 +20,10 @@
     "uglify": "cat app/scripts/jquery-1.11.0.min.js app/scripts/angular.min.js app/scripts/angular-route.min.js app/scripts/angular-resource.min.js app/scripts/angular-animate.min.js app/scripts/ui-bootstrap-tpls.min.js app/scripts/bootstrap.min.js app/scripts/shots.js app/scripts/details.js app/scripts/dribbble.js  app/scripts/app.js | uglifyjs -o app/dist/bundle.min.js",
     "uncss": "uncss https://cherry-app.appspot.com/ --ignore .container, .details, .modal, .modal-open, .modal-backdrop, .modal-backdrop.fade, .fade, .modal-open .modal, .modal.in, .modal-dialog, .modal.fade, .modal-details, .modal-dialog, .modal.in .modal-dialog,  .modal.fade .modal-dialog, .modal-content, .container, .container, .close, button, input, select, textarea  > app/style/core.css"
   },
-  "author": "Caio Zem",
+  "contributors": [
+    {"name": "Caio Zem"},
+    {"name": "Addy Osmani"}
+  ],
   "devDependencies": {
     "uglify-js": "^2.6.2"
   }
